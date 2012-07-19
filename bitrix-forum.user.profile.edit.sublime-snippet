@@ -1,0 +1,21 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:forum.user.profile.edit", "${1:.default}", Array(
+   "UID" => ${2:\$_REQUEST["UID"]},	// ID пользователя
+   "URL_TEMPLATES_PROFILE_VIEW" => "${3:profile_view.php?UID=#UID#}",	// Страница просмотра профиля
+   "USER_PROPERTY" => "${4:Array}",	// Показывать доп. свойства
+   "SET_NAVIGATION" => "${5:Y}",	// Показывать навигацию
+   "CACHE_TYPE" => "${6:A}",	// Тип кеширования
+   "CACHE_TIME" => "${7:0}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${8:}",	// 
+   "SET_TITLE" => "${9:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix forum.user.profile.edit</description>
+</snippet>

@@ -1,0 +1,22 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:forum.pm.folder", "${1:.default}", Array(
+   "SET_TITLE" => "${2:Y}",	// Устанавливать заголовок страницы
+   "CACHE_TYPE" => "${3:A}",	// Тип кеширования
+   "CACHE_TIME" => "${4:0}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${5:}",	// 
+   "SET_NAVIGATION" => "${6:Y}",	// Показывать навигацию
+   "URL_TEMPLATES_PM_LIST" => "${7:pm_list.php?FID=#FID#}",	// Страница списка персональных сообщений
+   "URL_TEMPLATES_PM_READ" => "${8:pm_read.php?MID=#MID#}",	// Страница чтения сообщения
+   "URL_TEMPLATES_PM_EDIT" => "${9:pm_edit.php?MID=#MID#}",	// Страница создания (редактирования) личных сообщений
+   "URL_TEMPLATES_PROFILE_VIEW" => "${10:profile_view.php?UID=#UID#}",	// Страница профиля
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix forum.pm.folder</description>
+</snippet>

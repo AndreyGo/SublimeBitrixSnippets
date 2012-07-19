@@ -1,0 +1,19 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:learning.course.list", "${1:.default}", Array(
+   "SORBY" => "${2:SORT}",	// Поле для cортировки
+   "SORORDER" => "${3:ASC}",	// Направление для cортировки
+   "COURSE_DETAIL_TEMPLATE" => "${4:course/index.php?COURSE_ID=#COURSE_ID#&INDEX=Y}",	// URL, ведущий на страницу с детальным просмотром курса
+   "CHECK_PERMISSIONS" => "${5:Y}",	// Проверять право доступа
+   "COURSES_PER_PAGE" => "${6:20}",	// Количество курсов на странице
+   "SET_TITLE" => "${7:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix learning.course.list</description>
+</snippet>

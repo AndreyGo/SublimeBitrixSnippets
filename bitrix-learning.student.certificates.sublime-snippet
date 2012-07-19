@@ -1,0 +1,16 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:learning.student.certificates", "${1:.default}", Array(
+   "COURSE_DETAIL_TEMPLATE" => "${2:course/index.php?COURSE_ID=#COURSE_ID#&INDEX=Y}",	// URL, ведущий на страницу с детальным просмотром курса
+   "TESTS_LIST_TEMPLATE" => "${3:course/index.php?COURSE_ID=#COURSE_ID#&TEST_LIST=Y}",	// URL, ведущий на страницу со списком тестов
+   "SET_TITLE" => "${4:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix learning.student.certificates</description>
+</snippet>

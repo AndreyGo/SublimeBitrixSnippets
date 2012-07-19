@@ -1,0 +1,25 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.order.ajax", "${1:.default}", Array(
+   "PATH_TO_BASKET" => "${2:basket.php}",	// Страница корзины
+   "PATH_TO_PERSONAL" => "${3:index.php}",	// Страница персонального раздела
+   "PATH_TO_PAYMENT" => "${4:payment.php}",	// Страница подключения платежной системы
+   "PATH_TO_AUTH" => "${5:/auth/}",	// Страница авторизации
+   "PAY_FROM_ACCOUNT" => "${6:Y}",	// Позволять оплачивать с внутреннего счета
+   "COUNT_DELIVERY_TAX" => "${7:N}",	// Рассчитывать налог для доставки
+   "COUNT_DISCOUNT_4_ALL_QUANTITY" => "${8:N}",	// Рассчитывать скидку для каждой позиции (на все количество товара)
+   "ONLY_FULL_PAY_FROM_ACCOUNT" => "${9:N}",	// Позволять оплачивать с внутреннего счета только в полном объеме
+   "ALLOW_AUTO_REGISTER" => "${10:N}",	// Оформлять заказ с автоматической регистрацией пользователя
+   "SEND_NEW_USER_NOTIFY" => "${11:Y}",	// Отправлять пользователю письмо, что он зарегистрирован на сайте
+   "DELIVERY_NO_AJAX" => "${12:Y}",	// Рассчитывать стоимость доставки сразу
+   "SET_TITLE" => "${13:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.order.ajax</description>
+</snippet>

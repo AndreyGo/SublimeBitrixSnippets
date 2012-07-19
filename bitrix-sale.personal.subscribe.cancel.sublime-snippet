@@ -1,0 +1,16 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.personal.subscribe.cancel", "${1:.default}", Array(
+   "PATH_TO_LIST" => "${2:}",	// Страница со списком подписок
+   "ID" => ${3:\$ID},	// Идентификатор подписки
+   "SET_TITLE" => "${4:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.personal.subscribe.cancel</description>
+</snippet>

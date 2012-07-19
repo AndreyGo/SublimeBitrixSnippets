@@ -1,0 +1,23 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:blog.calendar", "${1:.default}", Array(
+   "PATH_TO_BLOG" => "${2:}",	// Шаблон пути к странице блога
+   "BLOG_VAR" => "${3:}",	// Имя переменной для идентификатора блога
+   "PAGE_VAR" => "${4:}",	// Имя переменной для страницы
+   "BLOG_URL" => ${5:\$blog},	// Путь блога
+   "YEAR" => ${6:\$year},	// Год для фильтрации
+   "MONTH" => ${7:\$month},	// Месяц для фильтрации
+   "DAY" => ${8:\$day},	// День для фильтрации
+   "CACHE_TYPE" => "${9:A}",	// Тип кеширования
+   "CACHE_TIME" => "${10:86400}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${11:}",	// 
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix blog.calendar</description>
+</snippet>

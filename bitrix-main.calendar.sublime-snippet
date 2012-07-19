@@ -1,0 +1,21 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.calendar", "${1:.default}", Array(
+   "SHOW_INPUT" => "${2:Y}",	// Показывать элемент управления
+   "FORM_NAME" => "${3:}",	// Имя формы
+   "INPUT_NAME" => "${4:date_fld}",	// Имя первого поля интервала
+   "INPUT_NAME_FINISH" => "${5:date_fld_finish}",	// Имя второго поля интервала
+   "INPUT_VALUE" => "${6:}",	// Значение первого поля интервала
+   "INPUT_VALUE_FINISH" => "${7:}",	// Значение второго поля интервала
+   "SHOW_TIME" => "${8:N}",	// Позволять вводить время
+   "HIDE_TIMEBAR" => "${9:N}",	// Скрывать поле для ввода времени
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix main.calendar</description>
+</snippet>

@@ -1,0 +1,38 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:photogallery.imagerotator", "${1:.default}", Array(
+   "WIDTH" => "${2:300}",	// Ширина
+   "HEIGHT" => "${3:300}",	// Высота
+   "ROTATETIME" => "${4:5}",	// Время смены слайдов (сек.)
+   "BACKCOLOR" => "${5:#000000}",	// Цвет панели
+   "FRONTCOLOR" => "${6:#FFFFFF}",	// Цвет текста панели
+   "LIGHTCOLOR" => "${7:#e8e8e8}",	// Цвет текста панели при наведении
+   "SCREENCOLOR" => "${8:#FFFFFF}",	// Цвет экрана
+   "LOGO" => "${9:}",	// Логотип (отображается в верхнем правом углу)
+   "OVERSTRETCH" => "${10:N}",	// Не вписывать фотографию в отображаемые размеры
+   "SHOWNAVIGATION" => "${11:Y}",	// Показывать панель навигации
+   "USEFULLSCREEN" => "${12:N}",	// Показывать кнопку полноэкранного режима
+   "TRANSITION" => "${13:random}",	// Эффекты при смене фото
+   "IBLOCK_TYPE" => "${14:}",	// Тип инфоблока
+   "IBLOCK_ID" => "${15:}",	// Инфоблок
+   "SECTION_ID" => ${16:\$_REQUEST["SECTION_ID"]},	// ID раздела
+   "BEHAVIOUR" => "${17:SIMPLE}",	// Режим работы галереи
+   "CACHE_TYPE" => "${18:A}",	// Тип кеширования
+   "CACHE_TIME" => "${19:3600000}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${20:}",	// 
+   "ELEMENT_SORT_FIELD" => "${21:SORT}",	// Первое поле сортировки фото
+   "ELEMENT_SORT_ORDER" => "${22:asc}",	// Порядок сортировки фото
+   "ELEMENT_SORT_FIELD1" => "${23:}",	// Второе поле сортировки фото
+   "ELEMENT_SORT_ORDER1" => "${24:asc}",	// Порядок сортировки фото
+   "DETAIL_URL" => "${25:detail.php?SECTION_ID=#SECTION_ID#&ELEMENT_ID=#ELEMENT_ID#}",	// Фото
+   "USE_PERMISSIONS" => "${26:N}",	// Использовать дополнительное ограничение доступа
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix photogallery.imagerotator</description>
+</snippet>

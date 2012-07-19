@@ -1,0 +1,16 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:forum.pm.search", "${1:.default}", Array(
+   "PM_USER_PAGE" => "${2:10}",	// Количество найденных пользователей на странице
+   "PAGE_NAVIGATION_TEMPLATE" => "${3:}",	// Название шаблона для вывода постраничной навигации
+   "PAGE_NAVIGATION_WINDOW" => "${4:11}",	// Количество страниц в постраничной навигации
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix forum.pm.search</description>
+</snippet>

@@ -1,0 +1,20 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.personal.profile", "${1:.default}", Array(
+   "SEF_MODE" => "${2:N}",	// Включить поддержку ЧПУ
+   "PER_PAGE" => "${3:20}",	// Количество на одной странице
+   "USE_AJAX_LOCATIONS" => "${4:N}",	// Использовать расширенный выбор местоположения
+   "SET_TITLE" => "${5:Y}",	// Устанавливать заголовок страницы
+   "SEF_FOLDER" => "${6:}",	// Каталог ЧПУ (относительно корня сайта)
+   "SEF_URL_TEMPLATES_list" => "${7:profile_list.php}",	// Страница со списком профилей
+   "SEF_URL_TEMPLATES_detail" => "${8:profile_detail.php?ID=#ID#}",	// Страница с профилем подробно
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.personal.profile</description>
+</snippet>

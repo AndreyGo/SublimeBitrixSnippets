@@ -1,0 +1,28 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.recommended.products", "${1:.default}", Array(
+   "ID" => "${2:}",	// Идентификатор товара
+   "MIN_BUYES" => "${3:2}",	// Минимальное количество покупок товара
+   "DETAIL_URL" => "${4:}",	// URL, ведущий на страницу с содержимым элемента
+   "BASKET_URL" => "${5:/personal/basket.php}",	// URL, ведущий на страницу с корзиной покупателя
+   "ACTION_VARIABLE" => "${6:action}",	// Название переменной, в которой передается действие
+   "PRODUCT_ID_VARIABLE" => "${7:id}",	// Название переменной, в которой передается код товара для покупки
+   "ELEMENT_COUNT" => "${8:5}",	// Количество элементов для отображения
+   "LINE_ELEMENT_COUNT" => "${9:5}",	// Количество элементов выводимых в одной строке таблицы
+   "PRICE_CODE" => "${10:}",	// Тип цены
+   "USE_PRICE_COUNT" => "${11:N}",	// Использовать вывод цен с диапазонами
+   "SHOW_PRICE_COUNT" => "${12:1}",	// Выводить цены для количества
+   "PRICE_VAT_INCLUDE" => "${13:Y}",	// Включать НДС в цену
+   "CACHE_TYPE" => "${14:A}",	// Тип кеширования
+   "CACHE_TIME" => "${15:3600}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${16:}",	// 
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.recommended.products</description>
+</snippet>

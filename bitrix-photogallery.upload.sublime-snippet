@@ -1,0 +1,34 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:photogallery.upload", "${1:.default}", Array(
+   "IBLOCK_TYPE" => "${2:}",	// Тип инфоблока
+   "IBLOCK_ID" => "${3:}",	// Инфоблок
+   "SECTION_ID" => ${4:\$_REQUEST["SECTION_ID"]},	// ID раздела
+   "INDEX_URL" => "${5:index.php}",	// Индексная страница
+   "SECTION_URL" => "${6:section.php?SECTION_ID=#SECTION_ID#}",	// Страница просмотра альбома
+   "UPLOADER_TYPE" => "${7:applet}",	// Тип загрузчика
+   "APPLET_LAYOUT" => "${8:extended}",	// Схема множественного загрузчика
+   "UPLOAD_MAX_FILE_SIZE" => "${9:7}",	// Максимальный размер загружаемого файла (Мб)
+   "MODERATION" => "${10:N}",	// Обязательная премодерация фото
+   "USE_WATERMARK" => "${11:Y}",	// Наносить авторский знак
+   "WATERMARK_RULES" => "${12:USER}",	// Правила нанесения авторского знака
+   "WATERMARK_TYPE" => "${13:BOTH}",	// Тип авторского знака (для пользователя)
+   "PATH_TO_FONT" => "${14:}",	// Файл со шрифтом для авторского знака
+   "WATERMARK_MIN_PICTURE_SIZE" => "${15:800}",	// Минимальный размер фото для авторского знака (px)
+   "ALBUM_PHOTO_THUMBS_WIDTH" => "${16:120}",	// Размер картинки-анонса фотоальбома (px)
+   "THUMBNAIL_SIZE" => "${17:90}",	// Размер фотографии (px)
+   "JPEG_QUALITY1" => "${18:100}",	// Качество загружаемой фотографии (%)
+   "ORIGINAL_SIZE" => "${19:1280}",	// Обязательно ограничивать размеры фотографии (px) (при значении 0 ограничение не происходит)
+   "P_SHOW_RESIZER" => "${20:Y}",	// Давать возможность пользователю выбирать размер загружаемых фотографий
+   "JPEG_QUALITY" => "${21:100}",	// Качество загружаемой фотографии (%)
+   "SET_TITLE" => "${22:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix photogallery.upload</description>
+</snippet>

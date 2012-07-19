@@ -1,0 +1,20 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:blog.user.settings", "${1:.default}", Array(
+   "PATH_TO_USER" => "${2:}",	// Шаблон пути к странице пользователя
+   "PATH_TO_USER_SETTINGS_EDIT" => "${3:}",	// Шаблон пути к странице редактирования настроек пользователя
+   "BLOG_VAR" => "${4:}",	// Имя переменной для идентификатора блога
+   "USER_VAR" => "${5:}",	// Имя переменной для пользователя
+   "PAGE_VAR" => "${6:}",	// Имя переменной для страницы
+   "BLOG_URL" => ${7:\$blog},	// Адрес блога
+   "SET_TITLE" => "${8:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix blog.user.settings</description>
+</snippet>

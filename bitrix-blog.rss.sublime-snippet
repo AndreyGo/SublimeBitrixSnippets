@@ -1,0 +1,28 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:blog.rss", "${1:.default}", Array(
+   "MESSAGE_COUNT" => "${2:10}",	// Количество сообщений
+   "PATH_TO_BLOG" => "${3:}",	// Шаблон пути к странице блога
+   "PATH_TO_POST" => "${4:}",	// Шаблон пути к странице с сообщением блога
+   "PATH_TO_USER" => "${5:}",	// Шаблон пути к странице пользователя блога
+   "BLOG_VAR" => "${6:}",	// Имя переменной для идентификатора блога
+   "POST_VAR" => "${7:}",	// Имя переменной для идентификатора сообщения блога
+   "USER_VAR" => "${8:}",	// Имя переменной для идентификатора пользователя блога
+   "PAGE_VAR" => "${9:}",	// Имя переменной для страницы
+   "BLOG_URL" => "${10:}",	// Путь блога
+   "POST_ID" => ${11:\$post_id},	// Идентификатор сообщения блога
+   "TYPE" => ${12:\$type},	// Формат RSS
+   "MODE" => ${13:\$mode},	// Отдавать в RSS
+   "CACHE_TYPE" => "${14:A}",	// Тип кеширования
+   "CACHE_TIME" => "${15:86400}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${16:}",	// 
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix blog.rss</description>
+</snippet>

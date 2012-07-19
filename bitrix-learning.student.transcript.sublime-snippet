@@ -1,0 +1,15 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:learning.student.transcript", "${1:.default}", Array(
+   "TRANSCRIPT_ID" => ${2:\$_REQUEST["TRANSCRIPT_ID"]},	// Идентификатор резюме (Transcript ID)
+   "SET_TITLE" => "${3:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix learning.student.transcript</description>
+</snippet>

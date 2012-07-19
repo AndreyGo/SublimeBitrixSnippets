@@ -1,0 +1,25 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:forum.pm.read", "${1:.default}", Array(
+   "SET_TITLE" => "${2:Y}",	// Устанавливать заголовок страницы
+   "CACHE_TYPE" => "${3:A}",	// Тип кеширования
+   "CACHE_TIME" => "${4:0}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${5:}",	// 
+   "SET_NAVIGATION" => "${6:Y}",	// Показывать навигацию
+   "URL_TEMPLATES_PM_LIST" => "${7:pm_list.php?FID=#FID#}",	// Страница списка персональных сообщений
+   "URL_TEMPLATES_PM_READ" => "${8:pm_read.php?MID=#MID#}",	// Страница чтения персонального сообщения
+   "URL_TEMPLATES_PM_EDIT" => "${9:pm_edit.php?MID=#MID#}",	// Страница редактирования (создания) персонального сообщения
+   "URL_TEMPLATES_PROFILE_VIEW" => "${10:profile_view.php?UID=#UID#}",	// Страница профиля пользователя
+   "FID" => ${11:\$_REQUEST["FID"]},	// ID папки
+   "MID" => ${12:\$_REQUEST["TID"]},	// ID сообщения
+   "PATH_TO_SMILE" => "${13:/bitrix/images/forum/smile/}",	// Путь относительно корня сайта к папке со смайлами
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix forum.pm.read</description>
+</snippet>

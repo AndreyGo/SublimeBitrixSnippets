@@ -1,0 +1,20 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:map.yandex.search", "${1:.default}", Array(
+   "INIT_MAP_TYPE" => "${2:MAP}",	// Стартовый тип карты
+   "MAP_WIDTH" => "${3:600}",	// Ширина карты
+   "MAP_HEIGHT" => "${4:500}",	// Высота карты
+   "MAP_DATA" => ${5:a:3:s:10:"yandex_lat";d:55.73830000000000239879227592609822750091552734375;s:10:"yandex_lon";d:37.5945999999999997953636921010911464691162109375;s:12:"yandex_scale";i:10;},	// Начальная позиция карты
+   "CONTROLS" => "${6:Array}",	// Элементы управления
+   "OPTIONS" => "${7:Array}",	// Настройки
+   "MAP_ID" => "${8:}",	// Идентификатор карты
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix map.yandex.search</description>
+</snippet>

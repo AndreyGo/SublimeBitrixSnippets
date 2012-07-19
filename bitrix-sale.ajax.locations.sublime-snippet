@@ -1,0 +1,19 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.ajax.locations", "${1:.default}", Array(
+   "CITY_OUT_LOCATION" => "${2:Y}",	// Возвращать ID местоположения (в противном случае - города)
+   "ALLOW_EMPTY_CITY" => "${3:Y}",	// Выбор города местоположения не обязателен
+   "COUNTRY_INPUT_NAME" => "${4:COUNTRY}",	// Имя поля формы для страны
+   "CITY_INPUT_NAME" => "${5:LOCATION}",	// Имя поля формы для города (местоположения)
+   "COUNTRY" => "${6:}",	// Стартовое значение страны
+   "ONCITYCHANGE" => "${7:}",	// Обработчик смены значения города (местоположения)
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.ajax.locations</description>
+</snippet>

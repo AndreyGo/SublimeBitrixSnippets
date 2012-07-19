@@ -1,0 +1,22 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:store.catalog.random", "${1:.default}", Array(
+   "IBLOCK_TYPE_ID" => "${2:}",	// Тип инфо-блока
+   "IBLOCK_ID" => "${3:}",	// Инфо-блок
+   "PARENT_SECTION" => "${4:}",	// ID раздела
+   "RAND_COUNT" => "${5:0}",	// Количество позиций на странице
+   "DETAIL_URL" => "${6:}",	// URL, ведущий на страницу с содержимым элемента раздела
+   "CACHE_TYPE" => "${7:A}",	// Тип кеширования
+   "CACHE_TIME" => "${8:180}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${9:}",	// 
+   "CACHE_GROUPS" => "${10:Y}",	// Учитывать права доступа
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix store.catalog.random</description>
+</snippet>

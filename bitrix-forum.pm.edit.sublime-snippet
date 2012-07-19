@@ -1,0 +1,29 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:forum.pm.edit", "${1:.default}", Array(
+   "MID" => ${2:\$_REQUEST["MID"]},	// ID сообщения
+   "FID" => ${3:\$_REQUEST["FID"]},	// ID папки пользователя
+   "UID" => ${4:\$_REQUEST["UID"]},	// ID пользователя
+   "mode" => ${5:\$_REQUEST["mode"]},	// Тип сообщения
+   "URL_TEMPLATES_PM_LIST" => "${6:pm_list.php?FID=#FID#}",	// Страница списка персональных сообщений
+   "URL_TEMPLATES_PM_READ" => "${7:pm_read.php?MID=#MID#}",	// Страница чтения персонального сообщения
+   "URL_TEMPLATES_PM_EDIT" => "${8:pm_edit.php?MID=#MID#}",	// Страница редактирования (создания) персонального сообщения
+   "URL_TEMPLATES_PM_SEARCH" => "${9:pm_search.php?MID=#MID#}",	// Страница поиска пользователя
+   "URL_TEMPLATES_PROFILE_VIEW" => "${10:profile_view.php?UID=#UID#}",	// Страница профиля пользователя
+   "PATH_TO_SMILE" => "${11:/bitrix/images/forum/smile/}",	// Путь относительно корня сайта к папке со смайлами
+   "EDITOR_CODE_DEFAULT" => "${12:N}",	// По умолчанию показывать невизуальный режим редактора
+   "SET_NAVIGATION" => "${13:Y}",	// Показывать навигацию
+   "CACHE_TYPE" => "${14:A}",	// Тип кеширования
+   "CACHE_TIME" => "${15:0}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${16:}",	// 
+   "SET_TITLE" => "${17:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix forum.pm.edit</description>
+</snippet>

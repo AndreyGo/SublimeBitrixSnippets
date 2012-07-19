@@ -1,0 +1,25 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:blog.groups", "${1:.default}", Array(
+   "GROUPS_COUNT" => "${2:0}",	// Количество выводимых групп
+   "COLS_COUNT" => "${3:3}",	// Количество столбцов
+   "SORT_BY1" => "${4:NAME}",	// Первое поле для сортировки
+   "SORT_ORDER1" => "${5:ASC}",	// Направление сортировки
+   "SORT_BY2" => "${6:ID}",	// Второе поле для сортировки
+   "SORT_ORDER2" => "${7:ASC}",	// Направление сортировки
+   "PATH_TO_GROUP" => "${8:}",	// Шаблон пути к странице группы блогов
+   "GROUP_VAR" => "${9:}",	// Имя переменной для идентификатора группы блогов
+   "PAGE_VAR" => "${10:}",	// Имя переменной для страницы
+   "CACHE_TYPE" => "${11:A}",	// Тип кеширования
+   "CACHE_TIME" => "${12:86400}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${13:}",	// 
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix blog.groups</description>
+</snippet>

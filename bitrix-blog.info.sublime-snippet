@@ -1,0 +1,25 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:blog.info", "${1:.default}", Array(
+   "PATH_TO_BLOG" => "${2:}",	// Шаблон пути к странице блога
+   "PATH_TO_BLOG_CATEGORY" => "${3:}",	// Шаблон пути к странице блога c фильтром по тегу
+   "PATH_TO_USER" => "${4:}",	// Шаблон пути к странице пользователя блога
+   "BLOG_VAR" => "${5:}",	// Имя переменной для идентификатора блога
+   "USER_VAR" => "${6:}",	// Имя переменной для идентификатора пользователя блога
+   "PAGE_VAR" => "${7:}",	// Имя переменной для страницы
+   "BLOG_URL" => ${8:\$blog},	// Путь блога
+   "CATEGORY_ID" => ${9:\$category},	// Идентификатор тега для фильтрации
+   "CACHE_TYPE" => "${10:A}",	// Тип кеширования
+   "CACHE_TIME" => "${11:86400}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${12:}",	// 
+   "BLOG_PROPERTY_LIST" => "${13:Array}",	// Какие свойства блога выводить
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix blog.info</description>
+</snippet>

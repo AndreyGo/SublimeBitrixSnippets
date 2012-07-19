@@ -1,0 +1,20 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.account.pay", "${1:.default}", Array(
+   "PATH_TO_BASKET" => "${2:/personal/basket.php}",	// Путь к корзине
+   "REDIRECT_TO_CURRENT_PAGE" => "${3:N}",	// Перенаправлять пользователя на текущую страницу после добавления в корзину
+   "SELL_AMOUNT" => "${4:}",	// Выберите суммы для покупки
+   "SELL_CURRENCY" => "${5:}",	// Валюта для отображения
+   "VAR" => "${6:buyMoney}",	// Имя переменной для покупки
+   "CALLBACK_NAME" => "${7:PayUserAccountDeliveryOrderCallback}",	// Callback-функция для разрешения доставки товара
+   "SET_TITLE" => "${8:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.account.pay</description>
+</snippet>

@@ -1,0 +1,25 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:subscribe.edit", "${1:.default}", Array(
+   "AJAX_MODE" => "${2:N}",	// Включить режим AJAX
+   "SHOW_HIDDEN" => "${3:N}",	// Показать скрытые рубрики подписки
+   "ALLOW_ANONYMOUS" => "${4:Y}",	// Разрешить анонимную подписку
+   "SHOW_AUTH_LINKS" => "${5:Y}",	// Показывать ссылки на авторизацию при анонимной подписке
+   "CACHE_TYPE" => "${6:A}",	// Тип кеширования
+   "CACHE_TIME" => "${7:3600}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${8:}",	// 
+   "SET_TITLE" => "${9:Y}",	// Устанавливать заголовок страницы
+   "AJAX_OPTION_JUMP" => "${10:N}",	// Включить прокрутку к началу компонента
+   "AJAX_OPTION_STYLE" => "${11:Y}",	// Включить подгрузку стилей
+   "AJAX_OPTION_HISTORY" => "${12:N}",	// Включить эмуляцию навигации браузера
+   "AJAX_OPTION_ADDITIONAL" => "${13:}",	// Дополнительный идентификатор
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix subscribe.edit</description>
+</snippet>

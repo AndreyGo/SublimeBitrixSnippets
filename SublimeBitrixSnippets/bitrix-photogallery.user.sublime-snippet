@@ -1,0 +1,28 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:photogallery.user", "${1:.default}", Array(
+   "IBLOCK_TYPE" => "${2:}",	// Тип инфоблока
+   "IBLOCK_ID" => "${3:}",	// Инфоблок
+   "USER_ALIAS" => ${4:\$_REQUEST["USER_ALIAS"]},	// Код галереи
+   "INDEX_URL" => "${5:index.php}",	// Главная страница
+   "GALLERY_URL" => "${6:gallery.php&USER_ALIAS=#USER_ALIAS#}",	// Просмотр содержимого галереи
+   "GALLERIES_URL" => "${7:galleries.php&USER_ID=#USER_ID#}",	// Список галерей пользователя
+   "GALLERY_EDIT_URL" => "${8:gallery_edit.php?USER_ALIAS=#USER_ALIAS#&ACTION=#ACTION#}",	// Редактирование галереи
+   "UPLOAD_URL" => "${9:upload.php&USER_ALIAS=#USER_ALIAS#&SECTION_ID=#SECTION_ID#&ACTION=upload}",	// Загрузка фото
+   "ONLY_ONE_GALLERY" => "${10:Y}",	// Разрешить зарегистрированным пользователям создавать только одну галерею
+   "GALLERY_GROUPS" => "${11:}",	// Группы пользователей, которым разрешено создавать галерею
+   "GALLERY_SIZE" => "${12:50}",	// Размер галереи (Мб)
+   "GALLERY_AVATAR_SIZE" => "${13:50}",	// Размер аватара галереи (px)
+   "CACHE_TYPE" => "${14:A}",	// Тип кеширования
+   "CACHE_TIME" => "${15:3600}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${16:}",	// 
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix photogallery.user</description>
+</snippet>

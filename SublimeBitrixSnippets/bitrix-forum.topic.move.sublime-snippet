@@ -1,0 +1,27 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:forum.topic.move", "${1:.default}", Array(
+   "FID" => ${2:\$_REQUEST["FID"]},	// ID форума
+   "TID" => ${3:\$_REQUEST["TID"]},	// ID темы
+   "URL_TEMPLATES_INDEX" => "${4:index.php}",	// Страница списка форумов
+   "URL_TEMPLATES_READ" => "${5:read.php?FID=#FID#&TID=#TID#}",	// Страница чтения темы
+   "URL_TEMPLATES_MESSAGE" => "${6:message.php?FID=#FID#&TID=#TID#&MID=#MID#}",	// Страница чтения сообщения
+   "URL_TEMPLATES_LIST" => "${7:list.php?FID=#FID#}",	// Страница списка тем
+   "URL_TEMPLATES_TOPIC_MOVE" => "${8:topic_move.php?FID=#FID#&TID=#TID#}",	// Страница переноса тем
+   "URL_TEMPLATES_PROFILE_VIEW" => "${9:profile_view.php?UID=#UID#}",	// Страница профиля пользователя
+   "PATH_TO_ICON" => "${10:/bitrix/images/forum/icon/}",	// Путь относительно корня сайта к папке с иконками к темам
+   "SET_NAVIGATION" => "${11:Y}",	// Показывать навигацию
+   "SET_TITLE" => "${12:Y}",	// Устанавливать заголовок страницы
+   "CACHE_TYPE" => "${13:A}",	// Тип кеширования
+   "CACHE_TIME" => "${14:0}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${15:}",	// 
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix forum.topic.move</description>
+</snippet>

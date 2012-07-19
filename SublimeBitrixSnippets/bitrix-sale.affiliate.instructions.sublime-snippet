@@ -1,0 +1,18 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.affiliate.instructions", "${1:.default}", Array(
+   "REGISTER_PAGE" => "${2:register.php}",	// Страница регистрации
+   "SHOP_NAME" => "${3:}",	// Название сайта (если не указано, берется из настроек сайта)
+   "SHOP_URL" => "${4:}",	// Адрес сайта (без http://; если не указан, берется из настроек сайта)
+   "AFF_REG_PAGE" => "${5:/affiliate/register.php}",	// Путь для формирования ссылки на регистрацию аффилиата
+   "SET_TITLE" => "${6:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.affiliate.instructions</description>
+</snippet>

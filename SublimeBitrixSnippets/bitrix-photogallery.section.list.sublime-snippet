@@ -1,0 +1,41 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:photogallery.section.list", "${1:.default}", Array(
+   "IBLOCK_TYPE" => "${2:}",	// Тип инфоблока
+   "IBLOCK_ID" => "${3:}",	// Инфоблок
+   "SECTION_ID" => ${4:\$_REQUEST["SECTION_ID"]},	// ID раздела
+   "SECTION_CODE" => "${5:}",	// Код раздела
+   "BEHAVIOUR" => "${6:SIMPLE}",	// Режим работы галереи
+   "PHOTO_LIST_MODE" => "${7:Y}",	// Выводить список нескольких фотографий альбома вместо отображения обложки
+   "SHOWN_ITEMS_COUNT" => "${8:6}",	// Количество выводимых фотографий в списке альбомов
+   "ELEMENT_SORT_FIELD" => "${9:SORT}",	// Первое поле сортировки фото
+   "ELEMENT_SORT_ORDER" => "${10:asc}",	// Порядок сортировки фото
+   "ELEMENT_SORT_FIELD1" => "${11:}",	// Второе поле сортировки фото
+   "ELEMENT_SORT_ORDER1" => "${12:asc}",	// Порядок сортировки фото
+   "SORT_BY" => "${13:UF_DATE}",	// По какому полю сортируем разделы
+   "SORT_ORD" => "${14:ASC}",	// Порядок сортировки разделов
+   "INDEX_URL" => "${15:index.php}",	// Главная страница
+   "SECTION_URL" => "${16:section.php?SECTION_ID=#SECTION_ID#}",	// URL страницы с содержимым раздела
+   "SECTION_EDIT_URL" => "${17:section_edit.php?SECTION_ID=#SECTION_ID#}",	// Альбом (редактирование)
+   "SECTION_EDIT_ICON_URL" => "${18:section_edit_icon.php?SECTION_ID=#SECTION_ID#}",	// Альбом (редактирование обложки)
+   "UPLOAD_URL" => "${19:upload.php?SECTION_ID=#SECTION_ID#}",	// Страница загрузки фото
+   "ALBUM_PHOTO_SIZE" => "${20:200}",	// Размер альбома (px)
+   "ALBUM_PHOTO_THUMBS_SIZE" => "${21:120}",	// Размер картинки-анонса альбома (px)
+   "PAGE_ELEMENTS" => "${22:0}",	// Количество элементов на странице
+   "PAGE_NAVIGATION_TEMPLATE" => "${23:}",	// Шаблон для постраничной навигации
+   "DATE_TIME_FORMAT" => "${24:d.m.Y}",	// Формат вывода даты
+   "SET_STATUS_404" => "${25:N}",	// Устанавливать статус 404, если не найдены элемент или раздел
+   "SET_TITLE" => "${26:Y}",	// Устанавливать заголовок страницы
+   "CACHE_TYPE" => "${27:A}",	// Тип кеширования
+   "CACHE_TIME" => "${28:3600}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${29:}",	// 
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix photogallery.section.list</description>
+</snippet>

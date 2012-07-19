@@ -1,0 +1,17 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:socialnetwork.user_search_input", "${1:.default}", Array(
+   "NAME" => "${2:TAG}",	// Имя поля ввода
+   "VALUE" => "${3:}",	// Содержимое поля ввода
+   "FUNCTION" => "${4:}",	// JavaScript функция
+   "EXTRANET" => "${5:I}",	// Код экстранета (I/E/EA)
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix socialnetwork.user_search_input</description>
+</snippet>

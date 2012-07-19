@@ -1,0 +1,25 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:blog.rss.link", "${1:.default}", Array(
+   "PATH_TO_RSS" => "${2:}",	// Шаблон пути к странице RSS блога
+   "PATH_TO_RSS_ALL" => "${3:}",	// Шаблон пути к странице общего RSS блогов
+   "BLOG_VAR" => "${4:}",	// Имя переменной для идентификатора блога
+   "PAGE_VAR" => "${5:}",	// Имя переменной для страницы
+   "GROUP_VAR" => "${6:}",	// Имя переменной для идентификатора группы
+   "BLOG_URL" => "${7:}",	// Путь блога
+   "POST_ID" => ${8:\$post_id},	// Идентификатор сообщения блога
+   "GROUP_ID" => "${9:}",	// Идентификатор группы блогов
+   "RSS1" => "${10:Y}",	// Показывать ссылку на RSS .92
+   "RSS2" => "${11:Y}",	// Показывать ссылку на RSS 2.0
+   "ATOM" => "${12:Y}",	// Показывать ссылку на ATOM .3
+   "MODE" => "${13:B}",	// Показывать ссылки на RSS
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix blog.rss.link</description>
+</snippet>

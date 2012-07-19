@@ -1,0 +1,15 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:system.liveid.receive", "${1:.default}", Array(
+   "DEFAULT_REDIRECT_URL" => "${2:/}",	// Адрес страницы для возврата после проверки
+   "USE_SESSION_URL" => "${3:Y}",	// Для возврата использовать адрес страницы из сессии пользователя
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix system.liveid.receive</description>
+</snippet>

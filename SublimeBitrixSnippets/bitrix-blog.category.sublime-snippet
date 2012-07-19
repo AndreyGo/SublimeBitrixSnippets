@@ -1,0 +1,15 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:blog.category", "${1:.default}", Array(
+   "BLOG_URL" => ${2:\$blog},	// Путь блога
+   "SET_TITLE" => "${3:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix blog.category</description>
+</snippet>

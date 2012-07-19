@@ -1,0 +1,27 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.bestsellers", "${1:.default}", Array(
+   "BY" => "${2:}",	// Выводить лидера по
+   "PERIOD" => "${3:}",	// Период выборки
+   "FILTER_NAME" => "${4:arFilter}",	// Имя фильтра для свойств товара
+   "ORDER_FILTER_NAME" => "${5:arOrderFilter}",	// Имя фильтра для параметров заказа
+   "ITEM_COUNT" => "${6:10}",	// Количество элементов для отображения
+   "DETAIL_URL" => "${7:}",	// URL, ведущий на страницу с содержимым элемента
+   "CACHE_TYPE" => "${8:A}",	// Тип кеширования
+   "CACHE_TIME" => "${9:86400}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${10:}",	// 
+   "AJAX_MODE" => "${11:N}",	// Включить режим AJAX
+   "AJAX_OPTION_JUMP" => "${12:N}",	// Включить прокрутку к началу компонента
+   "AJAX_OPTION_STYLE" => "${13:Y}",	// Включить подгрузку стилей
+   "AJAX_OPTION_HISTORY" => "${14:N}",	// Включить эмуляцию навигации браузера
+   "AJAX_OPTION_ADDITIONAL" => "${15:}",	// Дополнительный идентификатор
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.bestsellers</description>
+</snippet>

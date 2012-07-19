@@ -1,0 +1,20 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.user.link", "${1:.default}", Array(
+   "CACHE_TYPE" => "${2:A}",	// Тип кеширования
+   "CACHE_TIME" => "${3:7200}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${4:}",	// 
+   "ID" => "${5:}",	// Идентификатор пользователя
+   "NAME_TEMPLATE" => "${6:#NOBR##LAST_NAME# #NAME##/NOBR#}",	// Отображение имени
+   "SHOW_LOGIN" => "${7:Y}",	// Показывать логин, если не задано имя
+   "USE_THUMBNAIL_LIST" => "${8:Y}",	// Отображать личное фото в списке
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix main.user.link</description>
+</snippet>

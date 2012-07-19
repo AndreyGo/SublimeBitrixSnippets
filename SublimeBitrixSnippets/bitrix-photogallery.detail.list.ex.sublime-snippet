@@ -1,0 +1,42 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:photogallery.detail.list.ex", "${1:.default}", Array(
+   "IBLOCK_TYPE" => "${2:}",	// Тип инфоблока
+   "IBLOCK_ID" => "${3:}",	// Инфоблок
+   "BEHAVIOUR" => "${4:SIMPLE}",	// Режим работы галереи
+   "SET_TITLE" => "${5:Y}",	// Устанавливать заголовок страницы
+   "CACHE_TYPE" => "${6:A}",	// Тип кеширования
+   "CACHE_TIME" => "${7:3600}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${8:}",	// 
+   "SECTION_ID" => ${9:\$_REQUEST["SECTION_ID"]},	// ID раздела
+   "ELEMENT_LAST_TYPE" => "${10:none}",	// Дополнительные параметры выбора фото
+   "ELEMENT_SORT_FIELD" => "${11:SORT}",	// Первое поле сортировки фото
+   "ELEMENT_SORT_ORDER" => "${12:asc}",	// Порядок сортировки фото
+   "ELEMENT_SORT_FIELD1" => "${13:}",	// Второе поле сортировки фото
+   "ELEMENT_SORT_ORDER1" => "${14:asc}",	// Порядок сортировки фото
+   "PROPERTY_CODE" => "${15:}",	// Свойства
+   "DETAIL_URL" => "${16:detail.php?SECTION_ID=#SECTION_ID#&ELEMENT_ID=#ELEMENT_ID#}",	// Страница детального просмотра
+   "DETAIL_SLIDE_SHOW_URL" => "${17:slide_show.php?SECTION_ID=#SECTION_ID#&ELEMENT_ID=#ELEMENT_ID#}",	// Страница слайд-шоу
+   "SEARCH_URL" => "${18:search.php}",	// Страница поиска
+   "USE_PERMISSIONS" => "${19:N}",	// Использовать дополнительное ограничение доступа
+   "GROUP_PERMISSIONS" => "${20:Array}",	// Группы пользователей, имеющие доступ к детальной информации
+   "USE_DESC_PAGE" => "${21:Y}",	// Использовать обратную навигацию
+   "PAGE_ELEMENTS" => "${22:50}",	// Количество фото на странице
+   "PAGE_NAVIGATION_TEMPLATE" => "${23:}",	// Название шаблона для постраничной навигации
+   "DATE_TIME_FORMAT" => "${24:d.m.Y}",	// Формат вывода даты
+   "SET_STATUS_404" => "${25:N}",	// Устанавливать статус 404, если не найдены элемент или раздел
+   "ADDITIONAL_SIGHTS" => "${26:Array}",	// Дополнительные эскизы
+   "PICTURES_SIGHT" => "${27:}",	// Активный эскиз (один из множества дополнительных и основных эскизов)
+   "PATH_TO_USER" => "${28:/company/personal/user/#USER_ID#}",	// Путь к профилю пользователя
+   "NAME_TEMPLATE" => "${29:#NOBR##LAST_NAME# #NAME##/NOBR#}",	// Отображение имени
+   "SHOW_LOGIN" => "${30:Y}",	// Показывать логин, если не задано имя
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix photogallery.detail.list.ex</description>
+</snippet>

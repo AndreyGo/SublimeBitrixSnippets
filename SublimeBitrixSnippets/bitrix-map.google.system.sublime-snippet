@@ -1,0 +1,19 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:map.google.system", "${1:.default}", Array(
+   "INIT_MAP_TYPE" => "${2:NORMAL}",	// Стартовый тип карты
+   "MAP_WIDTH" => "${3:600}",	// Ширина карты
+   "MAP_HEIGHT" => "${4:500}",	// Высота карты
+   "CONTROLS" => "${5:Array}",	// Элементы управления
+   "OPTIONS" => "${6:Array}",	// Настройки
+   "MAP_ID" => "${7:}",	// Идентификатор карты
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix map.google.system</description>
+</snippet>

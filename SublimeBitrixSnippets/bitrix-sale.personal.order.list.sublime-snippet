@@ -1,0 +1,22 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.personal.order.list", "${1:.default}", Array(
+   "PATH_TO_DETAIL" => "${2:}",	// Страница c подробной информацией о заказе
+   "PATH_TO_COPY" => "${3:}",	// Страница повторения заказа
+   "PATH_TO_CANCEL" => "${4:}",	// Страница отмены заказа
+   "PATH_TO_BASKET" => "${5:}",	// Страница корзины
+   "ORDERS_PER_PAGE" => "${6:20}",	// Количество заказов, выводимых на страницу
+   "ID" => ${7:\$ID},	// Идентификатор заказа
+   "SET_TITLE" => "${8:Y}",	// Устанавливать заголовок страницы
+   "SAVE_IN_SESSION" => "${9:Y}",	// Сохранять установки фильтра в сессии пользователя
+   "NAV_TEMPLATE" => "${10:}",	// Имя шаблона для постраничной навигации
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.personal.order.list</description>
+</snippet>

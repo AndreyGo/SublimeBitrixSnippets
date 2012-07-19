@@ -1,0 +1,24 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:search.tags.cloud", "${1:.default}", Array(
+   "SORT" => "${2:NAME}",	// Сортировка тегов
+   "PAGE_ELEMENTS" => "${3:150}",	// Количество тегов
+   "PERIOD" => "${4:}",	// Период выборки тегов (дней)
+   "URL_SEARCH" => "${5:/search/index.php}",	// Путь к странице поиска (от корня сайта)
+   "TAGS_INHERIT" => "${6:Y}",	// Сужать область поиска
+   "CHECK_DATES" => "${7:N}",	// Искать только в активных по дате документах
+   "FILTER_NAME" => "${8:}",	// Дополнительный фильтр
+   "CACHE_TYPE" => "${9:A}",	// Тип кеширования
+   "CACHE_TIME" => "${10:3600}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${11:}",	// 
+   "arrFILTER" => "${12:all}",	// Ограничение области поиска
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix search.tags.cloud</description>
+</snippet>

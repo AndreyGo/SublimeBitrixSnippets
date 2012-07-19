@@ -1,0 +1,19 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.personal.cc", "${1:.default}", Array(
+   "SEF_MODE" => "${2:N}",	// Включить поддержку ЧПУ
+   "PER_PAGE" => "${3:20}",	// Количество на одной странице
+   "SET_TITLE" => "${4:Y}",	// Устанавливать заголовок страницы
+   "SEF_FOLDER" => "${5:}",	// Каталог ЧПУ (относительно корня сайта)
+   "SEF_URL_TEMPLATES_list" => "${6:index.php}",	// Страница со списком карт
+   "SEF_URL_TEMPLATES_detail" => "${7:detail.php?ID=#ID#}",	// Страница редактирования пластиковой карты
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.personal.cc</description>
+</snippet>

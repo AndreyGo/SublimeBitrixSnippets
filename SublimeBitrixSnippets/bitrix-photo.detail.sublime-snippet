@@ -1,0 +1,39 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:photo.detail", "${1:.default}", Array(
+   "AJAX_MODE" => "${2:N}",	// Включить режим AJAX
+   "IBLOCK_TYPE" => "${3:}",	// Тип инфо-блока
+   "IBLOCK_ID" => "${4:}",	// Инфо-блок
+   "SECTION_ID" => ${5:\$_REQUEST["SECTION_ID"]},	// ID раздела
+   "ELEMENT_ID" => ${6:\$_REQUEST["ELEMENT_ID"]},	// ID элемента
+   "SECTION_CODE" => "${7:}",	// Код раздела
+   "ELEMENT_CODE" => "${8:}",	// Код элемента
+   "ELEMENT_SORT_FIELD" => "${9:sort}",	// По какому полю отсортировать фотографии для ссылок "след." и "пред."
+   "ELEMENT_SORT_ORDER" => "${10:asc}",	// В каком порядке отсортировать фотографии для ссылок "след." и "пред."
+   "FIELD_CODE" => "${11:}",	// Поля
+   "PROPERTY_CODE" => "${12:}",	// Свойства
+   "SECTION_URL" => "${13:}",	// URL, ведущий на страницу с содержимым раздела
+   "DETAIL_URL" => "${14:}",	// URL, ведущий на страницу с содержимым элемента раздела
+   "META_KEYWORDS" => "${15:-}",	// Установить ключевые слова страницы из свойства
+   "META_DESCRIPTION" => "${16:-}",	// Установить описание страницы из свойства
+   "BROWSER_TITLE" => "${17:-}",	// Установить заголовок окна браузера из свойства
+   "SET_TITLE" => "${18:Y}",	// Устанавливать заголовок страницы
+   "SET_STATUS_404" => "${19:N}",	// Устанавливать статус 404, если не найдены элемент или раздел
+   "CACHE_TYPE" => "${20:A}",	// Тип кеширования
+   "CACHE_TIME" => "${21:36000000}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${22:}",	// 
+   "CACHE_GROUPS" => "${23:Y}",	// Учитывать права доступа
+   "AJAX_OPTION_JUMP" => "${24:N}",	// Включить прокрутку к началу компонента
+   "AJAX_OPTION_STYLE" => "${25:Y}",	// Включить подгрузку стилей
+   "AJAX_OPTION_HISTORY" => "${26:N}",	// Включить эмуляцию навигации браузера
+   "AJAX_OPTION_ADDITIONAL" => "${27:}",	// Дополнительный идентификатор
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix photo.detail</description>
+</snippet>

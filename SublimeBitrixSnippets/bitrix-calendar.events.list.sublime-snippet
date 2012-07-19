@@ -1,0 +1,21 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:calendar.events.list", "${1:.default}", Array(
+   "CALENDAR_TYPE" => "${2:}",	// Тип календаря
+   "INIT_DATE" => "${3:--текущая дата--}",	// Дата инициализации
+   "FUTURE_MONTH_COUNT" => "${4:2}",	// Показывать ближайшие события за количество месяцев
+   "DETAIL_URL" => "${5:}",	// Адрес страницы для детального просмотра
+   "EVENTS_COUNT" => "${6:5}",	// Количество событий в списке
+   "CACHE_TYPE" => "${7:A}",	// Тип кеширования
+   "CACHE_TIME" => "${8:3600}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${9:}",	// 
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix calendar.events.list</description>
+</snippet>

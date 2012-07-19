@@ -1,0 +1,17 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:forum.rules", "${1:.default}", Array(
+   "CONTENT" => "${2:}",	// Путь к файлу, содержащему текст раздела (при пустом поле ввода будет использовано значение по умолчанию)
+   "URL_TEMPLATES_INDEX" => "${3:index.php}",	// Страница списка форумов
+   "SET_NAVIGATION" => "${4:Y}",	// Показывать навигацию
+   "SET_TITLE" => "${5:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix forum.rules</description>
+</snippet>

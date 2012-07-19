@@ -1,0 +1,13 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.ajax.delivery.calculator", "${1:.default}", Array(
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.ajax.delivery.calculator</description>
+</snippet>

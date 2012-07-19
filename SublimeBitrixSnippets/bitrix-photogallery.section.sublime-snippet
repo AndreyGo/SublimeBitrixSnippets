@@ -1,0 +1,34 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:photogallery.section", "${1:.default}", Array(
+   "IBLOCK_TYPE" => "${2:}",	// Тип инфоблока
+   "IBLOCK_ID" => "${3:}",	// Инфоблок
+   "SECTION_ID" => ${4:\$_REQUEST["SECTION_ID"]},	// ID раздела
+   "SECTION_CODE" => "${5:}",	// Код раздела
+   "USER_ALIAS" => "${6:}",	// Код фотогалереи
+   "BEHAVIOUR" => "${7:}",	// Режим работы фотогалереи
+   "INDEX_URL" => "${8:index.php}",	// Список разделов
+   "SECTION_URL" => "${9:section.php?SECTION_ID=#SECTION_ID#}",	// URL страницы с содержимым раздела
+   "SECTION_EDIT_URL" => "${10:section_edit.php?SECTION_ID=#SECTION_ID#}",	// Альбом (редактирование)
+   "SECTION_EDIT_ICON_URL" => "${11:section_edit_icon.php?SECTION_ID=#SECTION_ID#}",	// Альбом (редактирование обложки)
+   "DETAIL_SLIDE_SHOW_URL" => "${12:slide_show.php?SECTION_ID=#SECTION_ID#&ELEMENT_ID=#ELEMENT_ID#}",	// Страница слайд-шоу
+   "UPLOAD_URL" => "${13:upload.php?SECTION_ID=#SECTION_ID#}",	// Загрузка фото
+   "DATE_TIME_FORMAT" => "${14:d.m.Y}",	// Формат вывода даты
+   "ALBUM_PHOTO_SIZE" => "${15:150}",	// Размер альбома (px)
+   "ALBUM_PHOTO_THUMBS_SIZE" => "${16:70}",	// Размер картинки-анонса альбома (px)
+   "RETURN_SECTION_INFO" => "${17:Y}",	// Возвращать массив данных альбома
+   "SET_STATUS_404" => "${18:N}",	// Устанавливать статус 404, если не найдены элемент или раздел
+   "CACHE_TYPE" => "${19:A}",	// Тип кеширования
+   "CACHE_TIME" => "${20:3600}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${21:}",	// 
+   "SET_TITLE" => "${22:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix photogallery.section</description>
+</snippet>

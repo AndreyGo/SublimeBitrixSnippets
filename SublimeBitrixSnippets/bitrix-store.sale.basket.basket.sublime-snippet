@@ -1,0 +1,25 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:store.sale.basket.basket", "${1:.default}", Array(
+   "PATH_TO_ORDER" => "${2:/personal/order.php}",	// Страница оформления заказа
+   "HIDE_COUPON" => "${3:N}",	// Спрятать поле ввода купона
+   "COLUMNS_LIST" => "${4:Array}",	// Выводимые колонки
+   "QUANTITY_FLOAT" => "${5:N}",	// Использовать дробное значение количества
+   "PRICE_VAT_SHOW_VALUE" => "${6:N}",	// Отображать значение НДС
+   "COUNT_DISCOUNT_4_ALL_QUANTITY" => "${7:N}",	// Рассчитывать скидку для каждой позиции (на все количество товара)
+   "SET_TITLE" => "${8:Y}",	// Устанавливать заголовок страницы
+   "AJAX_MODE" => "${9:N}",	// Включить режим AJAX
+   "AJAX_OPTION_JUMP" => "${10:N}",	// Включить прокрутку к началу компонента
+   "AJAX_OPTION_STYLE" => "${11:Y}",	// Включить подгрузку стилей
+   "AJAX_OPTION_HISTORY" => "${12:N}",	// Включить эмуляцию навигации браузера
+   "AJAX_OPTION_ADDITIONAL" => "${13:}",	// Дополнительный идентификатор
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix store.sale.basket.basket</description>
+</snippet>

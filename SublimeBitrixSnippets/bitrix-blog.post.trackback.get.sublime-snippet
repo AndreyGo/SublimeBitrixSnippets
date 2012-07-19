@@ -1,0 +1,19 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:blog.post.trackback.get", "${1:.default}", Array(
+   "BLOG_URL" => ${2:\$blog},	// Адрес блога
+   "PATH_TO_POST" => "${3:}",	// Шаблон пути к сообщению
+   "BLOG_VAR" => "${4:}",	// Имя переменной для идентификатора блога
+   "POST_VAR" => "${5:}",	// Имя переменной для идентификатора сообщения блога
+   "PAGE_VAR" => "${6:}",	// Имя переменной для страницы
+   "ID" => ${7:\$id},	// Идентификатор сообщения
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix blog.post.trackback.get</description>
+</snippet>

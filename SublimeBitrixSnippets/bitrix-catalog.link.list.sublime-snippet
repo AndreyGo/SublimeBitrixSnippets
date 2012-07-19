@@ -1,0 +1,51 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.link.list", "${1:.default}", Array(
+   "AJAX_MODE" => "${2:N}",	// Включить режим AJAX
+   "IBLOCK_TYPE" => "${3:}",	// Тип инфо-блока
+   "IBLOCK_ID" => "${4:}",	// Инфо-блок
+   "LINK_PROPERTY_SID" => "${5:}",	// Свойство в котором хранится связь
+   "ELEMENT_ID" => ${6:\$_REQUEST["PARENT_ELEMENT_ID"]},	// ID элемента
+   "ELEMENT_SORT_FIELD" => "${7:sort}",	// По какому полю сортируем элементы
+   "ELEMENT_SORT_ORDER" => "${8:asc}",	// Порядок сортировки элементов
+   "FILTER_NAME" => "${9:arrFilter}",	// Имя массива со значениями фильтра для фильтрации элементов
+   "SECTION_URL" => "${10:}",	// URL, ведущий на страницу с содержимым раздела
+   "DETAIL_URL" => "${11:}",	// URL, ведущий на страницу с содержимым элемента раздела
+   "BASKET_URL" => "${12:/personal/basket.php}",	// URL, ведущий на страницу с корзиной покупателя
+   "ACTION_VARIABLE" => "${13:action}",	// Название переменной, в которой передается действие
+   "PRODUCT_ID_VARIABLE" => "${14:id}",	// Название переменной, в которой передается код товара для покупки
+   "SECTION_ID_VARIABLE" => "${15:SECTION_ID}",	// Название переменной, в которой передается код группы
+   "SET_TITLE" => "${16:Y}",	// Устанавливать заголовок страницы
+   "PAGE_ELEMENT_COUNT" => "${17:30}",	// Количество элементов на странице
+   "PROPERTY_CODE" => "${18:}",	// Свойства
+   "PRICE_CODE" => "${19:}",	// Тип цены
+   "USE_PRICE_COUNT" => "${20:N}",	// Использовать вывод цен с диапазонами
+   "SHOW_PRICE_COUNT" => "${21:1}",	// Выводить цены для количества
+   "PRICE_VAT_INCLUDE" => "${22:Y}",	// Включать НДС в цену
+   "CACHE_TYPE" => "${23:A}",	// Тип кеширования
+   "CACHE_TIME" => "${24:300}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${25:}",	// 
+   "CACHE_FILTER" => "${26:N}",	// Кэшировать при установленном фильтре
+   "CACHE_GROUPS" => "${27:Y}",	// Учитывать права доступа
+   "DISPLAY_TOP_PAGER" => "${28:N}",	// Выводить над списком
+   "DISPLAY_BOTTOM_PAGER" => "${29:Y}",	// Выводить под списком
+   "PAGER_TITLE" => "${30:Товары}",	// Название категорий
+   "PAGER_SHOW_ALWAYS" => "${31:Y}",	// Выводить всегда
+   "PAGER_TEMPLATE" => "${32:}",	// Название шаблона
+   "PAGER_DESC_NUMBERING" => "${33:N}",	// Использовать обратную навигацию
+   "PAGER_DESC_NUMBERING_CACHE_TIME" => "${34:36000}",	// Время кеширования страниц для обратной навигации
+   "PAGER_SHOW_ALL" => "${35:Y}",	// Показывать ссылку "Все"
+   "AJAX_OPTION_JUMP" => "${36:N}",	// Включить прокрутку к началу компонента
+   "AJAX_OPTION_STYLE" => "${37:Y}",	// Включить подгрузку стилей
+   "AJAX_OPTION_HISTORY" => "${38:N}",	// Включить эмуляцию навигации браузера
+   "AJAX_OPTION_ADDITIONAL" => "${39:}",	// Дополнительный идентификатор
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix catalog.link.list</description>
+</snippet>

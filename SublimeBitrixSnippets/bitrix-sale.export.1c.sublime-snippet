@@ -1,0 +1,20 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.export.1c", "${1:.default}", Array(
+   "SITE_LIST" => "${2:}",	// Сайт, заказы которого выгружать в "1С:Предприятие"
+   "EXPORT_PAYED_ORDERS" => "${3:Y}",	// Выгружать только оплаченные заказы
+   "EXPORT_ALLOW_DELIVERY_ORDERS" => "${4:Y}",	// Выгружать только заказы c разрешенной доставкой
+   "EXPORT_FINAL_ORDERS" => "${5:}",	// Выгружать заказы начиная со статуса
+   "REPLACE_CURRENCY" => "${6:руб.}",	// Заменять валюту при выгрузке в "1С:Предприятие" на
+   "GROUP_PERMISSIONS" => "${7:Array}",	// Группы пользователям которых разрешена выгрузка
+   "USE_ZIP" => "${8:Y}",	// Использовать сжатие zip, если доступно
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.export.1c</description>
+</snippet>

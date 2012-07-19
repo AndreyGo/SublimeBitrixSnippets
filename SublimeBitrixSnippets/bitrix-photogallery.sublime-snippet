@@ -1,0 +1,64 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:photogallery", "${1:.default}", Array(
+   "USE_LIGHT_VIEW" => "${2:Y}",	// Использовать простой режим настройки
+   "SEF_MODE" => "${3:N}",	// Включить поддержку ЧПУ
+   "IBLOCK_TYPE" => "${4:}",	// Тип инфоблока
+   "IBLOCK_ID" => "${5:}",	// Инфоблок
+   "SECTION_SORT_BY" => "${6:UF_DATE}",	// По какому полю сортируем альбомы
+   "SECTION_SORT_ORD" => "${7:DESC}",	// Порядок сортировки альбомов
+   "ELEMENT_SORT_FIELD" => "${8:sort}",	// По какому полю сортируем фото
+   "ELEMENT_SORT_ORDER" => "${9:desc}",	// Порядок сортировки фото в альбомах
+   "PATH_TO_USER" => "${10:}",	// Путь к профилю пользователя
+   "SECTION_PAGE_ELEMENTS" => "${11:15}",	// Количество альбомов на странице
+   "ELEMENTS_PAGE_ELEMENTS" => "${12:50}",	// Количество фото на странице
+   "PAGE_NAVIGATION_TEMPLATE" => "${13:}",	// Шаблон для постраничной навигации
+   "ALBUM_PHOTO_SIZE" => "${14:120}",	// Размер картинки фотоальбома (px)
+   "THUMBNAIL_SIZE" => "${15:100}",	// Размер фотографии-анонса (px)
+   "JPEG_QUALITY1" => "${16:100}",	// Качество фотографии-анонса (%)
+   "ORIGINAL_SIZE" => "${17:1280}",	// Обязательно ограничивать размер оригинала (px) (при значении 0 ограничение не происходит)
+   "JPEG_QUALITY" => "${18:100}",	// Качество загружаемой фотографии (%)
+   "ADDITIONAL_SIGHTS" => "${19:Array}",	// Дополнительные эскизы
+   "PHOTO_LIST_MODE" => "${20:Y}",	// Отображать список альбомов в качестве рубрик со списком последних добавленых фотографий
+   "SHOWN_ITEMS_COUNT" => "${21:6}",	// Количество выводимых фотографий в списке альбомов
+   "SHOW_NAVIGATION" => "${22:N}",	// Отображать навигационную цепочку 'хлебные крошки' в рамках комплексного компонента
+   "DATE_TIME_FORMAT_DETAIL" => "${23:d.m.Y}",	// Формат вывода даты фото
+   "DATE_TIME_FORMAT_SECTION" => "${24:d.m.Y}",	// Формат вывода даты альбома
+   "SET_TITLE" => "${25:Y}",	// Устанавливать заголовок страницы
+   "CACHE_TYPE" => "${26:A}",	// Тип кеширования
+   "CACHE_TIME" => "${27:3600}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${28:}",	// 
+   "USE_RATING" => "${29:N}",	// Разрешить голосование
+   "SHOW_TAGS" => "${30:N}",	// Показывать теги
+   "DRAG_SORT" => "${31:Y}",	// Сортировать фотографии в альбоме перетаскиванием
+   "UPLOADER_TYPE" => "${32:applet}",	// Тип загрузчика
+   "APPLET_LAYOUT" => "${33:extended}",	// Схема множественного загрузчика
+   "UPLOAD_MAX_FILE_SIZE" => "${34:8}",	// Максимальный размер загружаемого файла (не должен превышать 8 Мб) (Мб)
+   "USE_WATERMARK" => "${35:Y}",	// Наносить авторский знак
+   "WATERMARK_RULES" => "${36:USER}",	// Правила нанесения авторского знака
+   "PATH_TO_FONT" => "${37:}",	// Файл со шрифтом для авторского знака
+   "WATERMARK_MIN_PICTURE_SIZE" => "${38:800}",	// Минимальный размер фото для авторского знака (px)
+   "VARIABLE_ALIASES_SECTION_ID" => "${39:SECTION_ID}",	// Идентификатор раздела
+   "VARIABLE_ALIASES_ELEMENT_ID" => "${40:ELEMENT_ID}",	// Идентификатор элемента
+   "VARIABLE_ALIASES_PAGE_NAME" => "${41:PAGE_NAME}",	// Идентификатор страницы
+   "VARIABLE_ALIASES_ACTION" => "${42:ACTION}",	// Идентификатор действия
+   "SEF_FOLDER" => "${43:}",	// Каталог ЧПУ (относительно корня сайта)
+   "SEF_URL_TEMPLATES_index" => "${44:index.php}",	// Главная страница
+   "SEF_URL_TEMPLATES_section" => "${45:#SECTION_ID#/}",	// Альбом
+   "SEF_URL_TEMPLATES_section_edit" => "${46:#SECTION_ID#/action/#ACTION#/}",	// Альбом (редактирование)
+   "SEF_URL_TEMPLATES_section_edit_icon" => "${47:#SECTION_ID#/icon/action/#ACTION#/}",	// Альбом (редактирование обложки)
+   "SEF_URL_TEMPLATES_upload" => "${48:#SECTION_ID#/action/upload/}",	// Загрузка фото
+   "SEF_URL_TEMPLATES_detail" => "${49:#SECTION_ID#/#ELEMENT_ID#/}",	// Фото
+   "SEF_URL_TEMPLATES_detail_edit" => "${50:#SECTION_ID#/#ELEMENT_ID#/action/#ACTION#/}",	// Фото (редактирование)
+   "SEF_URL_TEMPLATES_detail_list" => "${51:list/}",	// Фото (список)
+   "SEF_URL_TEMPLATES_search" => "${52:search/}",	// Поиск
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix photogallery</description>
+</snippet>

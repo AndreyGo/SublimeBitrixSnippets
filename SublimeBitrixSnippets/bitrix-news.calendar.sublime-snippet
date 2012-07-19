@@ -1,0 +1,36 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:news.calendar", "${1:.default}", Array(
+   "AJAX_MODE" => "${2:N}",	// Включить режим AJAX
+   "IBLOCK_TYPE" => "${3:news}",	// Тип информационного блока (используется только для проверки)
+   "IBLOCK_ID" => ${4:\$_REQUEST["ID"]},	// Код информационного блока
+   "MONTH_VAR_NAME" => "${5:month}",	// Имя переменной для месяца
+   "YEAR_VAR_NAME" => "${6:year}",	// Имя переменной для года
+   "WEEK_START" => "${7:1}",	// Начало недели
+   "DATE_FIELD" => "${8:DATE_ACTIVE_FROM}",	// Поле даты
+   "TYPE" => "${9:EVENTS}",	// Тип календаря
+   "SHOW_YEAR" => "${10:Y}",	// Показывать переход по годам
+   "SHOW_TIME" => "${11:Y}",	// Показывать время новостей
+   "TITLE_LEN" => "${12:0}",	// Длина заголовка (0 - не ограничивать)
+   "SET_TITLE" => "${13:Y}",	// Устанавливать заголовок страницы
+   "SHOW_CURRENT_DATE" => "${14:Y}",	// Показывать текущий месяц и год
+   "SHOW_MONTH_LIST" => "${15:Y}",	// Показывать выпадающий список месяцев
+   "NEWS_COUNT" => "${16:0}",	// Количество новостей в день (0 - не ограничивать)
+   "DETAIL_URL" => "${17:}",	// URL, ведущий на страницу с содержимым элемента раздела
+   "CACHE_TYPE" => "${18:A}",	// Тип кеширования
+   "CACHE_TIME" => "${19:36000000}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${20:}",	// 
+   "AJAX_OPTION_JUMP" => "${21:N}",	// Включить прокрутку к началу компонента
+   "AJAX_OPTION_STYLE" => "${22:Y}",	// Включить подгрузку стилей
+   "AJAX_OPTION_HISTORY" => "${23:N}",	// Включить эмуляцию навигации браузера
+   "AJAX_OPTION_ADDITIONAL" => "${24:}",	// Дополнительный идентификатор
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix news.calendar</description>
+</snippet>

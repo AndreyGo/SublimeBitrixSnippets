@@ -1,0 +1,20 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:blog.blog.edit", "${1:.default}", Array(
+   "PATH_TO_BLOG" => "${2:}",	// Шаблон пути к странице блога
+   "PATH_TO_BLOG_EDIT" => "${3:}",	// Шаблон пути к странице редактирования блога
+   "BLOG_VAR" => "${4:}",	// Имя переменной для идентификатора блога
+   "PAGE_VAR" => "${5:}",	// Имя переменной для страницы
+   "BLOG_URL" => ${6:\$blog},	// Путь блога
+   "SET_TITLE" => "${7:Y}",	// Устанавливать заголовок страницы
+   "BLOG_PROPERTY" => "${8:Array}",	// Показывать доп. свойства в блоге
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix blog.blog.edit</description>
+</snippet>

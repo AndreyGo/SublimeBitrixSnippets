@@ -1,0 +1,25 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:photogallery.detail.edit", "${1:.default}", Array(
+   "IBLOCK_TYPE" => "${2:}",	// Тип инфоблока
+   "IBLOCK_ID" => "${3:}",	// Инфоблок
+   "SECTION_ID" => ${4:\$_REQUEST["SECTION_ID"]},	// ID раздела
+   "ELEMENT_ID" => ${5:\$_REQUEST["ELEMENT_ID"]},	// ID элемента
+   "BEHAVIOUR" => "${6:SIMPLE}",	// Режим работы галереи
+   "USER_ALIAS" => ${7:\$_REQUEST["USER_ALIAS"]},	// Код галереи
+   "ACTION" => ${8:\$_REQUEST["ACTION"]},	// Действие над фотографией
+   "SECTION_URL" => "${9:section.php?SECTION_ID=#SECTION_ID#}",	// URL страницы с содержимым раздела
+   "DETAIL_URL" => "${10:detail.php?SECTION_ID=#SECTION_ID#&ELEMENT_ID=#ELEMENT_ID#}",	// URL страницы с содержимым элемента раздела
+   "DATE_TIME_FORMAT" => "${11:d.m.Y}",	// Формат вывода даты
+   "SET_STATUS_404" => "${12:N}",	// Устанавливать статус 404, если не найдены элемент или раздел
+   "SET_TITLE" => "${13:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix photogallery.detail.edit</description>
+</snippet>

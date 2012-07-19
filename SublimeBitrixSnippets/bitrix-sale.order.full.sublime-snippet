@@ -1,0 +1,29 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.order.full", "${1:.default}", Array(
+   "PATH_TO_BASKET" => "${2:basket.php}",	// Страница корзины
+   "PATH_TO_PERSONAL" => "${3:index.php}",	// Страница персонального раздела
+   "PATH_TO_AUTH" => "${4:/auth.php}",	// Страница авторизации
+   "PATH_TO_PAYMENT" => "${5:payment.php}",	// Страница подключения платежной системы
+   "ALLOW_PAY_FROM_ACCOUNT" => "${6:Y}",	// Позволять оплачивать с внутреннего счета
+   "SHOW_MENU" => "${7:Y}",	// Показывать меню навигации по процедуре оформления заказа
+   "USE_AJAX_LOCATIONS" => "${8:Y}",	// Использовать расширенную форму местоположения
+   "SHOW_AJAX_DELIVERY_LINK" => "${9:Y}",	// Запускать расчет стоимости доставки?
+   "CITY_OUT_LOCATION" => "${10:Y}",	// Выбор города местоположения не обязателен
+   "COUNT_DELIVERY_TAX" => "${11:N}",	// Рассчитывать налог для доставки
+   "COUNT_DISCOUNT_4_ALL_QUANTITY" => "${12:N}",	// Рассчитывать скидку для каждой позиции (на все количество товара)
+   "SET_TITLE" => "${13:Y}",	// Устанавливать заголовок страницы
+   "PRICE_VAT_INCLUDE" => "${14:Y}",	// Включать НДС в цену
+   "PRICE_VAT_SHOW_VALUE" => "${15:Y}",	// Отображать значение НДС
+   "ONLY_FULL_PAY_FROM_ACCOUNT" => "${16:N}",	// Позволять оплачивать с внутреннего счета только в полном объеме
+   "SEND_NEW_USER_NOTIFY" => "${17:Y}",	// Отправлять пользователю письмо, что он зарегистрирован на сайте
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.order.full</description>
+</snippet>

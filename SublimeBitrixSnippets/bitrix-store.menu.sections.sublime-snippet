@@ -1,0 +1,16 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:store.menu.sections", "${1:.default}", Array(
+   "CACHE_TYPE" => "${2:A}",	// Тип кеширования
+   "CACHE_TIME" => "${3:3600}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${4:}",	// 
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix store.menu.sections</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.order.payment.receive", "${1:.default}", Array(
+   "PAY_SYSTEM_ID" => "${2:}",	// Платежная система
+   "PERSON_TYPE_ID" => "${3:}",	// Тип плательщика
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.order.payment.receive</description>
+</snippet>

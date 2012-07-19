@@ -1,0 +1,17 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:search.tags.input", "${1:.default}", Array(
+   "NAME" => "${2:TAG}",	// Имя поля ввода
+   "VALUE" => "${3:}",	// Содержимое поля ввода
+   "SITE_ID" => "${4:s1}",	// ID сайта
+   "arrFILTER" => "${5:all}",	// Ограничение области поиска
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix search.tags.input</description>
+</snippet>

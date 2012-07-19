@@ -1,0 +1,20 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:furniture.catalog.index", "${1:.default}", Array(
+   "IBLOCK_TYPE" => "${2:}",	// Тип инфо-блока
+   "IBLOCK_ID" => "${3:}",	// Инфо-блок
+   "IBLOCK_BINDING" => "${4:section}",	// Показывать
+   "CACHE_TYPE" => "${5:A}",	// Тип кеширования
+   "CACHE_TIME" => "${6:36000}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${7:}",	// 
+   "CACHE_GROUPS" => "${8:Y}",	// Учитывать права доступа
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix furniture.catalog.index</description>
+</snippet>

@@ -1,0 +1,71 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:photogallery_user", "${1:.default}", Array(
+   "USE_LIGHT_VIEW" => "${2:Y}",	// Использовать простой режим настройки
+   "IBLOCK_TYPE" => "${3:}",	// Тип инфоблока
+   "IBLOCK_ID" => "${4:}",	// Инфоблок
+   "GALLERY_GROUPS" => "${5:Array}",	// Группы пользователей, которым разрешено создавать галерею
+   "ONLY_ONE_GALLERY" => "${6:Y}",	// Разрешать создавать пользователям только одну галерею (группы пользователей, имеющие доступ на запись к инфоблоку, могут создавать неограниченное количество галерей)
+   "MODERATION" => "${7:N}",	// Включить премодерацию фото
+   "SECTION_SORT_BY" => "${8:UF_DATE}",	// По какому полю сортируем альбомы
+   "SECTION_SORT_ORD" => "${9:DESC}",	// Порядок сортировки альбомов
+   "ELEMENT_SORT_FIELD" => "${10:id}",	// По какому полю сортируем фото
+   "ELEMENT_SORT_ORDER" => "${11:desc}",	// Порядок сортировки фото в альбомах
+   "PATH_TO_USER" => "${12:}",	// Путь к профилю пользователя
+   "SEF_MODE" => "${13:N}",	// Включить поддержку ЧПУ
+   "SECTION_PAGE_ELEMENTS" => "${14:15}",	// Количество альбомов на странице
+   "ELEMENTS_PAGE_ELEMENTS" => "${15:50}",	// Количество фото на странице
+   "PAGE_NAVIGATION_TEMPLATE" => "${16:}",	// Шаблон для постраничной навигации
+   "DATE_TIME_FORMAT_SECTION" => "${17:d.m.Y}",	// Формат вывода даты альбома
+   "DATE_TIME_FORMAT_DETAIL" => "${18:d.m.Y}",	// Формат вывода даты фото
+   "GALLERY_AVATAR_SIZE" => "${19:50}",	// Размер картинки галереи (px)
+   "ALBUM_PHOTO_THUMBS_SIZE" => "${20:120}",	// Размер картинки-анонса фотоальбома (px)
+   "THUMBNAIL_SIZE" => "${21:100}",	// Размер фотографии-анонса (px)
+   "ORIGINAL_SIZE" => "${22:1280}",	// Обязательно ограничивать размер оригинала (px) (при значении 0 ограничение не происходит)
+   "JPEG_QUALITY1" => "${23:100}",	// Качество фотографии-анонса (%)
+   "JPEG_QUALITY" => "${24:100}",	// Качество загружаемой фотографии (%)
+   "ADDITIONAL_SIGHTS" => "${25:Array}",	// Дополнительные эскизы
+   "USE_RATING" => "${26:N}",	// Разрешить голосование
+   "SHOW_TAGS" => "${27:N}",	// Показывать теги
+   "SET_TITLE" => "${28:Y}",	// Устанавливать заголовок страницы
+   "CACHE_TYPE" => "${29:A}",	// Тип кеширования
+   "CACHE_TIME" => "${30:3600}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${31:}",	// 
+   "UPLOADER_TYPE" => "${32:applet}",	// Тип загрузчика
+   "APPLET_LAYOUT" => "${33:extended}",	// Схема множественного загрузчика
+   "UPLOAD_MAX_FILE_SIZE" => "${34:8}",	// Максимальный размер загружаемого файла (не должен превышать 8 Мб) (Мб)
+   "USE_WATERMARK" => "${35:Y}",	// Наносить авторский знак
+   "WATERMARK_RULES" => "${36:USER}",	// Правила нанесения авторского знака
+   "PATH_TO_FONT" => "${37:}",	// Файл со шрифтом (шрифт необходим для нанесения авторского знака при одиночной загрузке)
+   "WATERMARK_MIN_PICTURE_SIZE" => "${38:800}",	// Минимальный размер фото для авторского знака (px)
+   "VARIABLE_ALIASES_USER_ID" => "${39:USER_ID}",	// ID пользователя
+   "VARIABLE_ALIASES_USER_ALIAS" => "${40:USER_ALIAS}",	// Код галереи
+   "VARIABLE_ALIASES_SECTION_ID" => "${41:SECTION_ID}",	// Идентификатор раздела
+   "VARIABLE_ALIASES_ELEMENT_ID" => "${42:ELEMENT_ID}",	// Идентификатор элемента
+   "VARIABLE_ALIASES_PAGE_NAME" => "${43:PAGE_NAME}",	// Идентификатор страницы
+   "VARIABLE_ALIASES_ACTION" => "${44:ACTION}",	// Идентификатор действия
+   "SEF_FOLDER" => "${45:}",	// Каталог ЧПУ (относительно корня сайта)
+   "SEF_URL_TEMPLATES_index" => "${46:index.php}",	// Список альбомов
+   "SEF_URL_TEMPLATES_galleries" => "${47:galleries/#USER_ID#/}",	// Список галерей
+   "SEF_URL_TEMPLATES_gallery" => "${48:#USER_ALIAS#/}",	// Содержимое галереи
+   "SEF_URL_TEMPLATES_gallery_edit" => "${49:#USER_ALIAS#/action/#ACTION#/}",	// Редактирование галереи
+   "SEF_URL_TEMPLATES_section" => "${50:#USER_ALIAS#/#SECTION_ID#/}",	// Альбом
+   "SEF_URL_TEMPLATES_section_edit" => "${51:#USER_ALIAS#/#SECTION_ID#/action/#ACTION#/}",	// Альбом (редактирование)
+   "SEF_URL_TEMPLATES_section_edit_icon" => "${52:#USER_ALIAS#/#SECTION_ID#/icon/action/#ACTION#/}",	// Альбом (редактирование обложки)
+   "SEF_URL_TEMPLATES_upload" => "${53:#USER_ALIAS#/#SECTION_ID#/action/upload/}",	// Загрузка фото
+   "SEF_URL_TEMPLATES_detail" => "${54:#USER_ALIAS#/#SECTION_ID#/#ELEMENT_ID#/}",	// Фото
+   "SEF_URL_TEMPLATES_detail_edit" => "${55:#USER_ALIAS#/#SECTION_ID#/#ELEMENT_ID#/action/#ACTION#/}",	// Фото (редактирование)
+   "SEF_URL_TEMPLATES_detail_slide_show" => "${56:#USER_ALIAS#/#SECTION_ID#/#ELEMENT_ID#/slide_show/}",	// Слайд-шоу
+   "SEF_URL_TEMPLATES_detail_list" => "${57:list/}",	// Список фотографий
+   "SEF_URL_TEMPLATES_search" => "${58:search/}",	// Поиск
+   "SEF_URL_TEMPLATES_tags" => "${59:tags/}",	// Теги
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix photogallery_user</description>
+</snippet>

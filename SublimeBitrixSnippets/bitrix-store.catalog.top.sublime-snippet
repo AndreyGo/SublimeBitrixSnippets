@@ -1,0 +1,40 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:store.catalog.top", "${1:.default}", Array(
+   "IBLOCK_TYPE_ID" => "${2:}",	// Тип инфо-блока
+   "IBLOCK_ID" => "${3:}",	// Инфо-блок
+   "ELEMENT_SORT_FIELD" => "${4:sort}",	// По какому полю сортируем элементы
+   "ELEMENT_SORT_ORDER" => "${5:asc}",	// Порядок сортировки элементов
+   "SECTION_URL" => "${6:}",	// URL, ведущий на страницу с содержимым раздела
+   "DETAIL_URL" => "${7:}",	// URL, ведущий на страницу с содержимым элемента раздела
+   "BASKET_URL" => "${8:/personal/basket.php}",	// URL, ведущий на страницу с корзиной покупателя
+   "ACTION_VARIABLE" => "${9:action}",	// Название переменной, в которой передается действие
+   "PRODUCT_ID_VARIABLE" => "${10:id}",	// Название переменной, в которой передается код товара для покупки
+   "PRODUCT_QUANTITY_VARIABLE" => "${11:quantity}",	// Название переменной, в которой передается количество товара
+   "PRODUCT_PROPS_VARIABLE" => "${12:prop}",	// Название переменной, в которой передаются характеристики товара
+   "SECTION_ID_VARIABLE" => "${13:SECTION_ID}",	// Название переменной, в которой передается код группы
+   "DISPLAY_COMPARE" => "${14:N}",	// Выводить кнопку сравнения
+   "ELEMENT_COUNT" => "${15:9}",	// Количество выводимых элементов
+   "LINE_ELEMENT_COUNT" => "${16:3}",	// Количество элементов выводимых в одной строке таблицы
+   "PROPERTY_CODE" => "${17:}",	// Свойства
+   "FLAG_PROPERTY_CODE" => "${18:}",	// Необходимый для отображения флаг
+   "PRICE_CODE" => "${19:}",	// Тип цены
+   "USE_PRICE_COUNT" => "${20:N}",	// Использовать вывод цен с диапазонами
+   "SHOW_PRICE_COUNT" => "${21:1}",	// Выводить цены для количества
+   "PRICE_VAT_INCLUDE" => "${22:Y}",	// Включать НДС в цену
+   "PRODUCT_PROPERTIES" => "${23:}",	// Характеристики товара
+   "USE_PRODUCT_QUANTITY" => "${24:N}",	// Разрешить указание количества товара
+   "CACHE_TYPE" => "${25:A}",	// Тип кеширования
+   "CACHE_TIME" => "${26:3600}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${27:}",	// 
+   "CACHE_GROUPS" => "${28:Y}",	// Учитывать права доступа
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix store.catalog.top</description>
+</snippet>

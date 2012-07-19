@@ -1,0 +1,19 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.personal.subscribe", "${1:.default}", Array(
+   "SEF_MODE" => "${2:N}",	// Включить поддержку ЧПУ
+   "PER_PAGE" => "${3:20}",	// Количество на одной странице
+   "SET_TITLE" => "${4:Y}",	// Устанавливать заголовок страницы
+   "SEF_FOLDER" => "${5:}",	// Каталог ЧПУ (относительно корня сайта)
+   "SEF_URL_TEMPLATES_list" => "${6:subscribe_list.php}",	// Страница со списком подписок
+   "SEF_URL_TEMPLATES_cancel" => "${7:subscribe_cancel.php?ID=#ID#}",	// Страница отмены подписки
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.personal.subscribe</description>
+</snippet>

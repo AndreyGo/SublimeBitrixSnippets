@@ -1,0 +1,34 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:photo.sections.top", "${1:.default}", Array(
+   "IBLOCK_TYPE" => "${2:}",	// Тип инфо-блока
+   "IBLOCK_ID" => "${3:}",	// Инфо-блок
+   "SECTION_FIELDS" => "${4:}",	// Поля разделов
+   "SECTION_USER_FIELDS" => "${5:}",	// Свойства разделов
+   "SECTION_SORT_FIELD" => "${6:sort}",	// По какому полю сортируем разделы
+   "SECTION_SORT_ORDER" => "${7:asc}",	// Порядок сортировки разделов
+   "ELEMENT_SORT_FIELD" => "${8:sort}",	// По какому полю сортируем фотографии
+   "ELEMENT_SORT_ORDER" => "${9:asc}",	// Порядок сортировки фотографий в разделе
+   "FILTER_NAME" => "${10:arrFilter}",	// Имя выходящего массива для фильтрации
+   "FIELD_CODE" => "${11:}",	// Поля
+   "PROPERTY_CODE" => "${12:}",	// Свойства
+   "SECTION_URL" => "${13:}",	// URL, ведущий на страницу с содержимым раздела
+   "DETAIL_URL" => "${14:}",	// URL, ведущий на страницу с содержимым элемента раздела
+   "CACHE_TYPE" => "${15:A}",	// Тип кеширования
+   "CACHE_TIME" => "${16:36000000}",	// Время кеширования (сек.)
+   "CACHE_NOTES" => "${17:}",	// 
+   "CACHE_FILTER" => "${18:N}",	// Кэшировать при установленном фильтре
+   "CACHE_GROUPS" => "${19:Y}",	// Учитывать права доступа
+   "SECTION_COUNT" => "${20:20}",	// Максимальное количество выводимых разделов
+   "ELEMENT_COUNT" => "${21:9}",	// Максимальное количество фотографий выводимых в каждом разделе
+   "LINE_ELEMENT_COUNT" => "${22:3}",	// Количество фотографий выводимых в одной строке таблицы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix photo.sections.top</description>
+</snippet>

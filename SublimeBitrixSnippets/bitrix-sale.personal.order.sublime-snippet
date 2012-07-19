@@ -1,0 +1,24 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.personal.order", "${1:.default}", Array(
+   "SEF_MODE" => "${2:N}",	// Включить поддержку ЧПУ
+   "ORDERS_PER_PAGE" => "${3:20}",	// Количество заказов на одной странице
+   "PATH_TO_PAYMENT" => "${4:payment.php}",	// Страница подключения платежной системы
+   "PATH_TO_BASKET" => "${5:basket.php}",	// Страница с корзиной
+   "SET_TITLE" => "${6:Y}",	// Устанавливать заголовок страницы
+   "SAVE_IN_SESSION" => "${7:Y}",	// Сохранять установки фильтра в сессии пользователя
+   "NAV_TEMPLATE" => "${8:}",	// Имя шаблона для постраничной навигации
+   "SEF_FOLDER" => "${9:}",	// Каталог ЧПУ (относительно корня сайта)
+   "SEF_URL_TEMPLATES_list" => "${10:index.php}",	// Список заказов
+   "SEF_URL_TEMPLATES_detail" => "${11:order_detail.php?ID=#ID#}",	// Заказ подробно
+   "SEF_URL_TEMPLATES_cancel" => "${12:order_cancel.php?ID=#ID#}",	// Отмена заказа
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix sale.personal.order</description>
+</snippet>

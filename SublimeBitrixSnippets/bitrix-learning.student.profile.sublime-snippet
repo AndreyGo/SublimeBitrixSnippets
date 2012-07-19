@@ -1,0 +1,15 @@
+<snippet>
+  <content>
+    <![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:learning.student.profile", "${1:.default}", Array(
+   "TRANSCRIPT_DETAIL_TEMPLATE" => "${2:certification/?TRANSCRIPT_ID=#TRANSCRIPT_ID#}",	// URL, ведущий на страницу c результатами сертификации
+   "SET_TITLE" => "${3:Y}",	// Устанавливать заголовок страницы
+   ),
+  false
+);?>
+  ]]>
+</content>
+<tabTrigger></tabTrigger>
+<scope>text.html</scope>
+<description>Bitrix learning.student.profile</description>
+</snippet>

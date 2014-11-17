@@ -6,4 +6,4 @@ SublimeBitrixSnippets
 Папка "snippets" содержит набор сниппетов для работы с API 1С-Битрикс: Управление сайтом редакция "Бизнес" 
 Проект содержит компоненты 1С Битрикс
 
-Есть так же снипптеы для API https://github.com/AndreyGo/BitrixApiSublimeSnippets
+Есть так же сниппеты для API https://github.com/AndreyGo/BitrixApiSublimeSnippets
